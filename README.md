@@ -28,7 +28,7 @@ Following will build your CentOS sever environment in a few steps.
 
         # curl -L https://www.opscode.com/chef/install.sh | bash
 
-  Omunibus is installer of chef packaging. If you get more infomations, see `http://www.opscode.com/blog/2012/06/29/omnibus-chef-packaging/`.
+  Omunibus is installer of chef packaging. If you want to get more infomations, see `http://www.opscode.com/blog/2012/06/29/omnibus-chef-packaging/`.
 
 1. Install git
 
