@@ -1,13 +1,13 @@
 # Chef for CentOS
 
-Sample chef repository and installation steps document for CentOS6.
+This is a sample chef repository and installation steps document for CentOS6.
 
 At this repository you don't use chef-server.
 You only use chef-solo and git command in the custom bash script `chef-host`.
 
 # Usage
 
-Following will build your CentOS sever environment in easy several steps.
+Following steps will build your CentOS sever environment in easy several steps.
 
 1. Install CentOS.
 
@@ -41,5 +41,9 @@ Following will build your CentOS sever environment in easy several steps.
 1. Run chef-solo using following command
 
         # sh /var/chef/bin/chef-host
+
+1. Finished !
+
+  You have gotten environments of Apache(httpd), MySQL, PHP and 3rd party yum repositories(remi and epel).
 
 
