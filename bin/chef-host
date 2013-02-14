@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#
+# chef-host
+#   Execute chef-solo with auto generated run_list that is relied on hostname.
+#
+
+CMD_NAME=${0##*/}
+CMD_DIR=$(cd $(dirname $0);pwd)
+REPO_DIR=$(cd ${CMD_DIR}/..;pwd)
+
+HN=${HOSTNAME%%.*}
+LANG=en
+FILE_DATE=`date +%y%m%d%H%M%S%N`
+RUN_LIST_FILE="/tmp/chef_solo_run_list.${FILE_DATE}.json"
+
+#
+# Update chef reopository directory using git pull.
+#
+cd ${REPO_DIR}
+git pull
+
+#
+# Generate run_list json file using hostname. and then execute chef-solo command.
+#
+echo "{\"run_list\":[\"role[${HN}]\"]}" > ${RUN_LIST_FILE}
+echo "Generated run list file. [${RUN_LIST_FILE}]"
+
+chef-solo -c ${REPO_DIR}/config/solo.rb -j ${RUN_LIST_FILE}
+
+/bin/rm -f ${RUN_LIST_FILE}
+echo "Deleted run list file. [${RUN_LIST_FILE}]"
