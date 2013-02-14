@@ -1,5 +1,5 @@
 #
-# = Linuxの基本的なパッケージ
+# = Linux common packages
 #
 
 #

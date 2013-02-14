@@ -7,7 +7,7 @@ You only use chef-solo and git command in the custom bash script `chef-host`.
 
 # Usage
 
-Following steps will build your CentOS sever environment in easy several steps.
+Following will build your CentOS sever environment in a few steps.
 
 1. Install CentOS.
 
