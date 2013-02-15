@@ -13,7 +13,7 @@ Following will build your CentOS sever environment in a few steps.
 
         # vi /etc/sysconfig/network
 
- You need to edit like following.
+    You need to edit like following.
 
         NETWORKING=yes
         HOSTNAME=web
@@ -26,7 +26,7 @@ Following will build your CentOS sever environment in a few steps.
 
         # curl -L https://www.opscode.com/chef/install.sh | bash
 
- note) Omunibus is a installer of chef packaging. If you want to get more infomations, see `http://www.opscode.com/blog/2012/06/29/omnibus-chef-packaging/`.
+    note) Omunibus is a installer of chef packaging. If you want to get more infomations, see `http://www.opscode.com/blog/2012/06/29/omnibus-chef-packaging/`.
 
 1. Install git
 
@@ -40,6 +40,6 @@ Following will build your CentOS sever environment in a few steps.
 
         # sh /var/chef/bin/chef-host
 
- You will get environments of Apache(httpd), MySQL, PHP and 3rd party yum repositories(remi and epel).
+    You will get environments of Apache(httpd), MySQL, PHP and 3rd party yum repositories(remi and epel).
 
 
