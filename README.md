@@ -40,6 +40,6 @@ Following will build your CentOS sever environment in a few steps.
 
         # sh /var/chef/bin/chef-host
 
- You have gotten environments of Apache(httpd), MySQL, PHP and 3rd party yum repositories(remi and epel).
+ You will get environments of Apache(httpd), MySQL, PHP and 3rd party yum repositories(remi and epel).
 
 
