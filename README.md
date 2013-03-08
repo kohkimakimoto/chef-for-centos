@@ -42,4 +42,11 @@ Following will build your CentOS sever environment in a few steps.
 
     You will get environments of Apache(httpd), MySQL, PHP and 3rd party yum repositories(remi and epel).
 
+# See also
+
+The following page is a my blog post about it written in Japanese.
+
+http://kohkimakimoto.hatenablog.com/entry/2013/02/15/121741
+
+
 
