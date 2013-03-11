@@ -44,7 +44,7 @@ Following will build your CentOS sever environment in a few steps.
 
 # See also
 
-The following page is a my blog post about it written in Japanese.
+The following page is my blog post about it written in Japanese.
 
 http://kohkimakimoto.hatenablog.com/entry/2013/02/15/121741
 
